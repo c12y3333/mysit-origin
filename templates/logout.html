@@ -1,0 +1,16 @@
+
+{% extends "base.html" %}
+
+{% block title %}Hello, world {% endblock %}
+{% block headmessage %} Hello {% endblock %}
+{% block main %}
+  <hr>
+   
+	    一般號{{lotto}}<br>
+	    特別號{{special}}<br>
+
+	    {% autoescape off %}
+      {{ plot_div }}
+      {% endautoescape %}
+
+{% endblock %} 

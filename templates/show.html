@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %} {{post.title}} {% endblock %}
+{% block headmessage %} hi {% endblock %}
+{%block main%}
+	<hr>
+	<table class="table table-striped">
+		<tr>
+			<td>
+				{{post.title}}<br>
+				{{post.pub_date}}
+			</td>
+		</tr>
+		<tr>
+			<td>
+				{{post.content | linebreaks}}
+			</td>
+		</tr>
+	
+	</table>
+{% endblock %}
